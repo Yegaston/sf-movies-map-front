@@ -13,7 +13,7 @@ export class MoviesService {
   getMovies(): Observable<Movie[]> {
     return this.http
       .get<Movie[]>(
-        `http://backend.test/api/v1/map-points
+        `${environment.backendUrl}/api/v1/map-points
     `
       )
       .pipe(
